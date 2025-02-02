@@ -12,6 +12,7 @@ AFRAME.registerComponent("teleport", {
   init: function () {
     var teleport = this.el;
     teleport.addEventListener("click", function () {
+      
       document.body.innerHTML = `
         <a-scene vr-mode-ui="enabled: true" environment cursor="rayOrigin: mouse; fuse: false"
         raycaster="objects: .raycastable">
@@ -60,7 +61,9 @@ AFRAME.registerComponent("teleport", {
         <a-light type="point" intensity="1" color="#ebebeb" position="2 4 2"></a-light>
         <script src="aframe.js"></script>
       `;
-    });
+      document.querySelector('a-scene').enterVR()
+    }
+  );
   },
 });
 
