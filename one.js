@@ -1,7 +1,7 @@
 AFRAME.registerComponent("unlocksession", {
   init: function () {
     var unlocksession = this.el;
-    var panel = document.querySelector("#html-panel");
+    var panel = document.querySelector("#unlocksessionpanel");
     var unlocksessionsound = document.querySelector("#uksound");
     unlocksession.addEventListener("mouseenter", function () {
       unlocksession.object3D.scale.set(15, 20, 15);
@@ -25,7 +25,7 @@ AFRAME.registerComponent("unlocksession", {
   },
 });
 
-AFRAME.registerComponent("backward", {
+AFRAME.registerComponent("backward1", {
   init: function () {
     var teleport = this.el;
     teleport.addEventListener("mouseenter", function () {
