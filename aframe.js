@@ -33,7 +33,7 @@ AFRAME.registerComponent("backward1", {
 
         <!-- 圖片或影片 -->
         <a-assets>
-            <audio id="passwordsound" src="./source/mp3//password.mp3" preload="auto"></audio>
+            <audio id="passwordsound" src="./source/mp3//password_zh.mp3" preload="auto"></audio>
         </a-assets>
 
         <!-- 順移 -->
@@ -91,7 +91,7 @@ AFRAME.registerComponent("backward2", {
 
         <!-- 圖片或影片 -->
         <a-assets>
-            <audio id="passwordsound" src="./source/mp3//password.mp3" preload="auto"></audio>
+            <audio id="passwordsound" src="./source/mp3//password_zh.mp3" preload="auto"></audio>
         </a-assets>
 
         <!-- 順移 -->
@@ -150,7 +150,7 @@ AFRAME.registerComponent("teleport1", {
         <a-assets>
             <img id="windows" src="source/testimg/windows.png">
             <img id="close" src="source/testimg/close.png">
-            <audio id="unlocksessionthreatsound" src="./source/mp3/unlocksessionthreat.mp3" preload="auto"></audio>
+            <audio id="unlocksessionthreatsound" src="./source/mp3/unlocksessionthreat_Zh.mp3" preload="auto"></audio>
         </a-assets>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
@@ -249,8 +249,8 @@ AFRAME.registerComponent("teleport2", {
         <a-assets>
             <img id="windows" src="source/testimg/windows.png">
             <img id="close" src="source/testimg/close.png">
-            <audio id="passwordsound" src="./source/mp3/password.mp3" preload="auto"></audio>
-            <audio id="unlockphonesound" src="./source/mp3/unlockphone.mp3" preload="auto"></audio>
+            <audio id="passwordsound" src="./source/mp3/password_zh.mp3" preload="auto"></audio>
+            <audio id="unlockphonesound" src="./source/mp3/unlockphone_zh.mp3" preload="auto"></audio>
         </a-assets>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
@@ -402,7 +402,7 @@ AFRAME.registerComponent("teleport3", {
         <a-assets>
             <img id="windows" src="source/testimg/windows.png">
             <img id="close" src="source/testimg/close.png">
-            <audio id="idcardsound" src="./source/mp3/idcard.mp3" preload="auto"></audio>
+            <audio id="idcardsound" src="./source/mp3/idcard_Zh.mp3" preload="auto"></audio>
         </a-assets>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
@@ -502,7 +502,7 @@ AFRAME.registerComponent("next", {
 
         <!-- 圖片或影片 -->
         <a-assets>
-            <audio id="passwordsound" src="./source/mp3//password.mp3" preload="auto"></audio>
+            <audio id="passwordsound" src="./source/mp3//password_zh.mp3" preload="auto"></audio>
         </a-assets>
 
         <!-- 順移 -->
@@ -564,7 +564,7 @@ AFRAME.registerComponent("previous", {
 
         <!-- 圖片或影片 -->
         <a-assets>
-            <audio id="passwordsound" src="./source/mp3//password.mp3" preload="auto"></audio>
+            <audio id="passwordsound" src="./source/mp3//password_zh.mp3" preload="auto"></audio>
         </a-assets>
 
         <!-- 順移 -->
@@ -625,7 +625,7 @@ AFRAME.registerComponent("teleport4", {
         <a-assets>
             <img id="windows" src="source/testimg/windows.png">
             <img id="close" src="source/testimg/close.png">
-            <audio id="whiteboardsound" src="./source/mp3/whiteboard.mp3" preload="auto"></audio>
+            <audio id="whiteboardsound" src="./source/mp3/whiteboard_Zh.mp3" preload="auto"></audio>
         </a-assets>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
@@ -725,8 +725,8 @@ AFRAME.registerComponent("teleport6", {
         <a-assets>
             <img id="windows" src="source/testimg/windows.png">
             <img id="close" src="source/testimg/close.png">
-            <audio id="phishingsound" src="./source/mp3/phishingemail2.mp3" preload="auto"></audio>
-            <audio id="unkowncallsound" src="./source/mp3/unkowncall.mp3" preload="auto"></audio>
+            <audio id="phishingsound" src="./source/mp3/phishingemail_Zh.mp3" preload="auto"></audio>
+            <audio id="unkowncallsound" src="./source/mp3/unkowncall_zh.mp3" preload="auto"></audio>
         </a-assets>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
@@ -864,8 +864,8 @@ AFRAME.registerComponent("teleport5", {
         <a-assets>
             <img id="windows" src="source/testimg/windows.png">
             <img id="close" src="source/testimg/close.png">
-            <audio id="confidentailfilesound" src="./source/mp3/confidentialdocuments2.mp3" preload="auto"></audio>
-            <audio id="unattendedusbsound" src="./source/mp3/usbdrive.mp3" preload="auto"></audio>
+            <audio id="confidentailfilesound" src="./source/mp3/confidentialdocuments_Zh.mp3" preload="auto"></audio>
+            <audio id="unattendedusbsound" src="./source/mp3/usbdrive_zh.mp3" preload="auto"></audio>
         </a-assets>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
@@ -1004,7 +1004,7 @@ AFRAME.registerComponent("backward2", {
 
         <!-- 圖片或影片 -->
         <a-assets>
-            <audio id="passwordsound" src="./source/mp3//password.mp3" preload="auto"></audio>
+            <audio id="passwordsound" src="./source/mp3//password_zh.mp3" preload="auto"></audio>
         </a-assets>
 
         <!-- 順移 -->
