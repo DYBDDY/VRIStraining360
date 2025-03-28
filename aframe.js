@@ -837,7 +837,7 @@ AFRAME.registerComponent("teleport5", {
 
         <a-entity id="usbpanel" gltf-model="#unknownusbpanel" position="0.076 1.723 -0.098" rotation="0 -0.284 0"
             material="emissiveIntensity:10" visible="false">
-            <a-entity id="idsound" sound="src: #idcardsound"></a-entity>
+            <a-entity id="usbsound" sound="src: #unattendedusbsound"></a-entity>
         </a-entity>
         <!-- 互動物件 -->
         <a-box position="1.906 -4.726 -10.186" scale="5 5 10" class="raycastable" color="blue" visible="false"
