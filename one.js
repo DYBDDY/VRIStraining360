@@ -1,8 +1,8 @@
 AFRAME.registerComponent("unlocksession", {
   init: function () {
     var unlocksession = this.el;
-    var panel = document.querySelector("#unlocksessionpanel");
-    var unlocksessionsound = document.querySelector("#uksound");
+    var panel = document.querySelector("#uspanel");
+    var unlocksessionsound = document.querySelector("#ussound");
     unlocksession.addEventListener("mouseenter", function () {
       unlocksession.object3D.scale.set(15, 20, 15);
     });

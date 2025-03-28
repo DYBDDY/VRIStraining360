@@ -1,7 +1,7 @@
 AFRAME.registerComponent("password", {
     init: function () {
       var password = this.el;
-      var panel = document.querySelector("#passwordpanel");
+      var panel = document.querySelector("#pspanel");
       var passwordsound = document.querySelector("#pssound");
       password.addEventListener("mouseenter", function () {
         password.object3D.scale.set(5, 5, 5);
@@ -30,7 +30,7 @@ AFRAME.registerComponent("password", {
   AFRAME.registerComponent("unlockphone", {
     init: function () {
       var unlockphone = this.el;
-      var panel = document.querySelector("#unlockphonepanel");
+      var panel = document.querySelector("#uppanel");
       var unlockphonesound = document.querySelector("#upsound");
       unlockphone.addEventListener("mouseenter", function () {
         unlockphone.object3D.scale.set(15 ,5 ,15);

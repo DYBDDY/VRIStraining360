@@ -1,7 +1,7 @@
 AFRAME.registerComponent("confidentailfile", {
     init: function () {
       var confidentailfile = this.el;
-      var panel = document.querySelector("#confidentailfilepanel");
+      var panel = document.querySelector("#filepanel");
       var cfsound = document.querySelector("#cfsound");
       confidentailfile.addEventListener("mouseenter", function () {
         confidentailfile.object3D.scale.set(5, 5 ,10);
@@ -29,7 +29,7 @@ AFRAME.registerComponent("confidentailfile", {
   AFRAME.registerComponent("unattendedusb", {
     init: function () {
       var unattendedusb = this.el;
-      var panel = document.querySelector("#unattendedusbpanel");
+      var panel = document.querySelector("#usbpanel");
       var usbsound = document.querySelector("#usbsound");
       unattendedusb.addEventListener("mouseenter", function () {
         unattendedusb.object3D.scale.set(9 ,9, 9);

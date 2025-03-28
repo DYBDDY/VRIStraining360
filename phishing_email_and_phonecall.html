@@ -35,42 +35,32 @@
         <a-assets>
             <img id="windows" src="source/testimg/windows.png">
             <img id="close" src="source/testimg/close.png">
-            <audio id="phishingsound" src="./source/mp3/phishingemail2.mp3" preload="auto"></audio>
-            <audio id="unkowncallsound" src="./source/mp3/unkowncall.mp3" preload="auto"></audio>
+            <audio id="phishingsound" src="./source/mp3/phishingemail_Zh.mp3" preload="auto"></audio>
+            <audio id="unkowncallsound" src="./source/mp3/unkowncall_zh.mp3" preload="auto"></audio>
+            <a-asset-item id="unknowncallpanel" src="./source/unkownphonecallpanel3d.glb"></a-asset-item>
+            <a-asset-item id="emailpanel" src="./source/phishingpanel3d.glb"></a-asset-item>
+
         </a-assets>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
         <a-light type="point" intensity="1" color="#ebebeb" position="2 4 2"></a-light>
 
         <!-- 互動面板 -->
-        <a-entity id="phishingpanel" position="-0.469 2.862 -2.427" scale="2.279 2.279 2.279"rotation="0 0.221 0"
-            geometry="primitive: plane; width: 2; height: 1" material="color:black"
-            text="color: blue; align: center; value:; width: 2;" visible="false">
-            <a-text value="Phishing" position="0.036 0.383 0.030" scale="0.532 0.532 0.532"
-                text="align: center;"></a-text>
-            <a-text value="Dont click suspicious email" position="0.017 0.181 0.000" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
+        <a-entity id="phishingpanel" gltf-model="#emailpanel" position="-0.162 2.693 -3.399" rotation="0 0 0 "
+            scale="3.399 3.399 3.399" visible="false">
             <a-entity id="phishsound" sound="src: #phishingsound"></a-entity>
         </a-entity>
 
-        <a-entity id="phonecallpanel" position="-0.469 2.862 -2.427" scale="2.279 2.279 2.279" rotation="0 0.221 0"
-            geometry="primitive: plane; width: 2; height: 1" material="color:black"
-            text="color: blue; align: center; value:; width: 2;" visible="false">
-            <a-text value="Scam Call" position="0.036 0.383 0.030" scale="0.532 0.532 0.532"
-                text="align: center;"></a-text>
-            <a-text value="Be cautios with unkown numbers" position="0.017 0.181 0.000" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Check where the number is from" position="0.019 0.017 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
+        <a-entity id="ukpanel" gltf-model="#unknowncallpanel" position="-0.162 2.693 -3.399" rotation="0 0 0"
+            scale="3.399 3.399 3.399" visible="false">
             <a-entity id="ucsound" sound="src: #unkowncallsound"></a-entity>
         </a-entity>
-
         <!-- 互動物件 -->
-        <a-box position="0.112 -2.840 -22.473" scale="21.426 11.687 19.468" class="raycastable" color="blue" visible="false"
-        phishing></a-box>
+        <a-box position="0.112 -2.840 -22.473" scale="21.426 11.687 19.468" class="raycastable" color="blue"
+            visible="false" phishing></a-box>
 
-        <a-box position="44.184 -74.192 -18.224"  rotation="8.977 -22.296 -3.252" scale="13.616 9 32.841" class="raycastable" color="blue" visible="false"
-        phonecall></a-box>
+        <a-box position="44.184 -74.192 -18.224" rotation="8.977 -22.296 -3.252" scale="13.616 9 32.841"
+            class="raycastable" color="blue" visible="false" phonecall></a-box>
 
         <a-entity id="backward2" gltf-model="#backward" position="4.544 3.484 -5.583" scale="3.692 3.692 3.692"
             class="raycastable" backward2></a-entity>

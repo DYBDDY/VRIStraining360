@@ -29,7 +29,7 @@ AFRAME.registerComponent("phishing", {
   AFRAME.registerComponent("phonecall", {
     init: function () {
       var phonecall = this.el;
-      var panel = document.querySelector("#phonecallpanel");
+      var panel = document.querySelector("#ukpanel");
       var ucsound = document.querySelector("#ucsound");
       phonecall.addEventListener("mouseenter", function () {
         phonecall.object3D.scale.set(13.616 ,9 ,32.8419);

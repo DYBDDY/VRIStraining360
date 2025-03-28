@@ -1,17 +1,16 @@
-
 AFRAME.registerComponent("backward1", {
   init: function () {
     var teleport = this.el;
     teleport.addEventListener("mouseenter", function () {
-      teleport.object3D.scale.set(5 ,5 ,5);
-      console.log("lol")
+      teleport.object3D.scale.set(5, 5, 5);
+      console.log("lol");
     });
 
     teleport.addEventListener("mouseleave", function () {
-      teleport.object3D.scale.set(3.692 ,3.692, 3.692);
+      teleport.object3D.scale.set(3.692, 3.692, 3.692);
     });
     teleport.addEventListener("click", function () {
-      document.querySelector('a-scene').innerHTML=`
+      document.querySelector("a-scene").innerHTML = `
     <a-sky src="./source/entrance-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
@@ -27,7 +26,7 @@ AFRAME.registerComponent("backward1", {
         <a-assets>
             <a-asset-item id="one" src="./source/one.glb"></a-asset-item>
             <a-asset-item id="two" src="./source/two.glb"></a-asset-item>
-            <a-asset-item id="three" src="./source/three.glb"></a-asset-item>
+            <!-- <a-asset-item id="three" src="./source/three.glb"></a-asset-item> -->
             <a-asset-item id="next" src="./source/next.glb"></a-asset-item>
         </a-assets>
 
@@ -61,15 +60,15 @@ AFRAME.registerComponent("backward2", {
   init: function () {
     var teleport = this.el;
     teleport.addEventListener("mouseenter", function () {
-      teleport.object3D.scale.set(5 ,5 ,5);
-      console.log("lol")
+      teleport.object3D.scale.set(5, 5, 5);
+      console.log("lol");
     });
 
     teleport.addEventListener("mouseleave", function () {
-      teleport.object3D.scale.set(3.692 ,3.692, 3.692);
+      teleport.object3D.scale.set(3.692, 3.692, 3.692);
     });
     teleport.addEventListener("click", function () {
-      document.querySelector('a-scene').innerHTML=`
+      document.querySelector("a-scene").innerHTML = `
         <a-sky src="./source/to_whiteboard2-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
@@ -83,6 +82,9 @@ AFRAME.registerComponent("backward2", {
 
         <!-- 模型 -->
         <a-assets>
+            <a-asset-item id="one" src="./source/one.glb"></a-asset-item>
+            <a-asset-item id="two" src="./source/two.glb"></a-asset-item>
+            <a-asset-item id="three" src="./source/three.glb"></a-asset-item>
             <a-asset-item id="four" src="./source/four.glb"></a-asset-item>
             <a-asset-item id="five" src="./source/five.glb"></a-asset-item>
             <a-asset-item id="six" src="./source/six.glb"></a-asset-item>
@@ -97,9 +99,9 @@ AFRAME.registerComponent("backward2", {
         <!-- 順移 -->
         <!-- <a-sphere position="-8.761 5.578 -3.118" class="raycastable" teleport></a-sphere> -->
         <!-- 使用模型或圖片 -->
-        <a-entity id="four" gltf-model="#four" position="7.723 5.505 -7.752" rotation="0 -49.649 0"scale="2 2 2" class="raycastable" teleport4></a-entity>
-        <a-entity id="five" gltf-model="#five" position="-3.179 2.350 -5.583" scale="2 2 2" class="raycastable" teleport5></a-entity>
-        <a-entity id="six" gltf-model="#six" position="-3.113 2.350 9.043" rotation = "0 158.571 0"scale="2 2 2" class="raycastable" teleport6></a-entity>
+        <!--<a-entity id="four" gltf-model="#four" position="7.723 5.505 -7.752" rotation="0 -49.649 0"scale="2 2 2" class="raycastable" teleport4></a-entity>-->
+        <a-entity id="five" gltf-model="#three" position="-3.179 2.350 -5.583" scale="2 2 2" class="raycastable" teleport5></a-entity>
+        <a-entity id="six" gltf-model="#four" position="-3.113 2.350 9.043" rotation = "0 158.571 0"scale="2 2 2" class="raycastable" teleport6></a-entity>
         <a-entity id="previous" gltf-model="#previous" position="9.134 4.566 -0.438" rotation = "-3.849 -76.945 178.972"scale="4 4 4" class="raycastable" previous></a-entity>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
@@ -120,17 +122,17 @@ AFRAME.registerComponent("teleport1", {
   init: function () {
     var one = this.el;
     one.addEventListener("mouseenter", function () {
-      one.object3D.scale.set(4 ,4 ,4);
-      console.log("lol")
+      one.object3D.scale.set(4, 4, 4);
+      console.log("lol");
     });
 
     one.addEventListener("mouseleave", function () {
-      one.object3D.scale.set(2 ,2 ,2);
+      one.object3D.scale.set(2, 2, 2);
     });
     one.addEventListener("click", function () {
       // document.querySelector('a-scene').innerHTML=`
-      document.querySelector('a-scene').innerHTML=`
-        <a-sky src="./source/unlock_session_threat_360-1.jpg" rotation="0 -90 0"></a-sky>
+      document.querySelector("a-scene").innerHTML = `
+         <a-sky src="./source/unlock_session_threat_360-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
 
@@ -145,6 +147,7 @@ AFRAME.registerComponent("teleport1", {
         <!-- 模型 -->
         <a-assets>
             <a-asset-item id="backward" src="./source/backward.glb"></a-asset-item>
+            <a-asset-item id="unlocksessionpanel" src="./source/unlocksessionthreatpanel3d.glb"></a-asset-item>
         </a-assets>
         <!-- 圖片或影片 -->
         <a-assets>
@@ -157,39 +160,30 @@ AFRAME.registerComponent("teleport1", {
         <a-light type="point" intensity="1" color="#ebebeb" position="2 4 2"></a-light>
 
         <!-- 互動面板 -->
-        <a-entity id="unlocksessionpanel" position="0.382 1.616 -2.430" scale="2.461 2.461 2.461" rotation="0 0.221 0"
-            geometry="primitive: plane; width: 2; height: 1" material="color:black"
-            text="color: blue; align: center; value:; width: 2;" visible="false">
-            <a-text value="Unlock session threat" position="0.036 0.383 0.030" scale="0.532 0.532 0.532"
-                text="align: center;"></a-text>
-            <a-text value="Dont leave unattended" position="0.017 0.181 0.000" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Lock your computer" position="0.019 0.017 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Use private screen filter" position="0.019 -0.167 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-entity id="uksound" sound="src: #unlocksessionthreatsound"></a-entity>
+        <a-entity id="uspanel" gltf-model="#unlocksessionpanel" position="-0.478 1.616 -2.430"  scale="2.461 2.461 2.461" rotation="0 0.221 0"
+            visible="false">
+            <a-entity id="ussound" sound="src: #unlocksessionthreatsound"></a-entity>
         </a-entity>
 
-         <!-- 互動物件 -->
-         <a-box  position="-0.802 -4.726 -22.706" scale="15 20 15" class="raycastable" color="blue"
-         visible="false" unlocksession></a-box>
+        <!-- 互動物件 -->
+        <a-box position="-0.802 -4.726 -22.706" scale="15 20 15" class="raycastable" color="blue" visible="false"
+            unlocksession></a-box>
 
-         <a-entity id="backward1" gltf-model="#backward" position="4.544 3.484 -5.583" scale="3.692 3.692 3.692" class="raycastable" backward1></a-entity>
-         
+        <a-entity id="backward1" gltf-model="#backward" position="4.544 3.484 -5.583" scale="3.692 3.692 3.692"
+            class="raycastable" backward1></a-entity>
+
         <script src="one.js"></script>
       `;
-      document.querySelector('a-scene').enterVR()
-    }
-  );
+      document.querySelector("a-scene").enterVR();
+    });
   },
 });
 
 AFRAME.registerComponent("unlocksession", {
   init: function () {
     var unlocksession = this.el;
-    var panel = document.querySelector("#unlocksessionpanel");
-    var unlocksessionsound = document.querySelector("#uksound");
+    var panel = document.querySelector("#uspanel");
+    var unlocksessionsound = document.querySelector("#ussound");
     unlocksession.addEventListener("mouseenter", function () {
       unlocksession.object3D.scale.set(15, 20, 15);
     });
@@ -212,24 +206,22 @@ AFRAME.registerComponent("unlocksession", {
   },
 });
 
-
-
 //TWO
 AFRAME.registerComponent("teleport2", {
   init: function () {
     var one = this.el;
     one.addEventListener("mouseenter", function () {
-      one.object3D.scale.set(4 ,4 ,4);
-      console.log("lol")
+      one.object3D.scale.set(4, 4, 4);
+      console.log("lol");
     });
 
     one.addEventListener("mouseleave", function () {
-      one.object3D.scale.set(2 ,2 ,2);
+      one.object3D.scale.set(2, 2, 2);
     });
     one.addEventListener("click", function () {
       // document.querySelector('a-scene').innerHTML
-      document.querySelector('a-scene').innerHTML=`
-        <a-sky src="./source/password_unlock_phone-1.jpg" rotation="0 -90 0"></a-sky>
+      document.querySelector("a-scene").innerHTML = `
+          <a-sky src="./source/password_unlock_phone-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
 
@@ -244,6 +236,8 @@ AFRAME.registerComponent("teleport2", {
         <!-- 模型 -->
         <a-assets>
             <a-asset-item id="backward" src="./source/backward.glb"></a-asset-item>
+            <a-asset-item id="paswwordpanel" src="./source/passwordpanel3d.glb"></a-asset-item>
+            <a-asset-item id="unlockphonepanel" src="./source/unlockphonepanel3d.glb"></a-asset-item>
         </a-assets>
         <!-- 圖片或影片 -->
         <a-assets>
@@ -257,34 +251,13 @@ AFRAME.registerComponent("teleport2", {
         <a-light type="point" intensity="1" color="#ebebeb" position="2 4 2"></a-light>
 
         <!-- 互動面板 -->
-        <a-entity id="passwordpanel" position="-0.106 2.234 0.234" rotation="0 0.221 0"
-            geometry="primitive: plane; width: 2; height: 1" material="color:black"
-            text="color: blue; align: center; value:; width: 2;" visible="false">
-            <a-text value="Password on a sticky note" position="0.036 0.383 0.030" scale="0.532 0.532 0.532"
-                text="align: center;"></a-text>
-            <a-text value="Dont write passwords down" position="0.017 0.181 0.000" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Dont share passwords" position="0.019 0.054 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Use strong passwords" position="0.023 -0.069 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Consider using a password manager" position="0.028 -0.188 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
+        <a-entity id="pspanel" gltf-model="#paswwordpanel" position="-0.106 2.234 0.234" rotation="0 0.221 0"
+            visible="false">
             <a-entity id="pssound" sound="src: #passwordsound"></a-entity>
         </a-entity>
 
-
-        <a-entity id="unlockphonepanel" position="-0.106 2.234 0.234" rotation="0 0.221 0"
-            geometry="primitive: plane; width: 2; height: 1" material="color:black"
-            text="color: blue; align: center; value:; width: 2;" visible="false">
-            <a-text value="Unlocked device" position="0.036 0.383 0.030" scale="0.532 0.532 0.532"
-                text="align: center;"></a-text>
-            <a-text value="Lock after use" position="0.017 0.181 0.000" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Dont leave unattended" position="0.019 0.017 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Use strong passwords" position="0.019 -0.167 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
+        <a-entity id="uppanel" gltf-model="#unlockphonepanel" position="1.585 1.353 1.440" rotation="0 -49.070 0"
+            material="emissiveIntensity:10" visible="false">
             <a-entity id="upsound" sound="src: #unlockphonesound"></a-entity>
         </a-entity>
 
@@ -301,18 +274,17 @@ AFRAME.registerComponent("teleport2", {
         <a-entity id="backward1" gltf-model="#backward" position="6.139 5.620 -5.583" scale="3.692 3.692 3.692"
             class="raycastable" backward1></a-entity>
 
-        <script src="aframe.js"></script>
+        <script src="two.js"></script>
       `;
-      document.querySelector('a-scene').enterVR()
-    }
-  );
+      document.querySelector("a-scene").enterVR();
+    });
   },
 });
 
 AFRAME.registerComponent("password", {
   init: function () {
     var password = this.el;
-    var panel = document.querySelector("#passwordpanel");
+    var panel = document.querySelector("#pspanel");
     var passwordsound = document.querySelector("#pssound");
     password.addEventListener("mouseenter", function () {
       password.object3D.scale.set(5, 5, 5);
@@ -322,7 +294,7 @@ AFRAME.registerComponent("password", {
       password.object3D.scale.set(5, 5, 5);
     });
     password.addEventListener("click", function () {
-      console.log("hahaha")
+      console.log("hahaha");
       var isVisible = panel.getAttribute("visible") === true;
       if (isVisible) {
         panel.setAttribute("visible", false);
@@ -337,21 +309,20 @@ AFRAME.registerComponent("password", {
   },
 });
 
-
 AFRAME.registerComponent("unlockphone", {
   init: function () {
     var unlockphone = this.el;
-    var panel = document.querySelector("#unlockphonepanel");
+    var panel = document.querySelector("#uppanel");
     var unlockphonesound = document.querySelector("#upsound");
     unlockphone.addEventListener("mouseenter", function () {
-      unlockphone.object3D.scale.set(15 ,5 ,15);
+      unlockphone.object3D.scale.set(15, 5, 15);
     });
 
     unlockphone.addEventListener("mouseleave", function () {
-      unlockphone.object3D.scale.set(15 ,5, 15);
+      unlockphone.object3D.scale.set(15, 5, 15);
     });
     unlockphone.addEventListener("click", function () {
-      console.log("hahaha")
+      console.log("hahaha");
       var isVisible = panel.getAttribute("visible") === true;
       if (isVisible) {
         panel.setAttribute("visible", false);
@@ -366,22 +337,21 @@ AFRAME.registerComponent("unlockphone", {
   },
 });
 
-
 //Three
 AFRAME.registerComponent("teleport3", {
   init: function () {
     var one = this.el;
     one.addEventListener("mouseenter", function () {
-      one.object3D.scale.set(4 ,4 ,4);
-      console.log("lol")
+      one.object3D.scale.set(4, 4, 4);
+      console.log("lol");
     });
 
     one.addEventListener("mouseleave", function () {
-      one.object3D.scale.set(2 ,2 ,2);
+      one.object3D.scale.set(2, 2, 2);
     });
     one.addEventListener("click", function () {
       // document.querySelector('a-scene').innerHTML
-      document.querySelector('a-scene').innerHTML=`
+      document.querySelector("a-scene").innerHTML = `
         <a-sky src="./source/idcard2-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
@@ -432,9 +402,8 @@ AFRAME.registerComponent("teleport3", {
 
         <script src="aframe.js"></script>
       `;
-      document.querySelector('a-scene').enterVR()
-    }
-  );
+      document.querySelector("a-scene").enterVR();
+    });
   },
 });
 
@@ -451,7 +420,7 @@ AFRAME.registerComponent("idcard", {
       idcard.object3D.scale.set(5, 5, 5);
     });
     idcard.addEventListener("click", function () {
-      console.log("hahaha")
+      console.log("hahaha");
       var isVisible = panel.getAttribute("visible") === true;
       if (isVisible) {
         panel.setAttribute("visible", false);
@@ -471,16 +440,16 @@ AFRAME.registerComponent("next", {
   init: function () {
     var next = this.el;
     next.addEventListener("mouseenter", function () {
-      next.object3D.scale.set(6 ,6 ,6);
-      console.log("lol")
+      next.object3D.scale.set(6, 6, 6);
+      console.log("lol");
     });
 
     next.addEventListener("mouseleave", function () {
-      next.object3D.scale.set(4 ,4 ,4);
+      next.object3D.scale.set(4, 4, 4);
     });
     next.addEventListener("click", function () {
       // document.querySelector('a-scene').innerHTML
-     document.querySelector('a-scene').innerHTML=`
+      document.querySelector("a-scene").innerHTML = `
         <a-sky src="./source/to_whiteboard2-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
@@ -494,6 +463,9 @@ AFRAME.registerComponent("next", {
 
         <!-- 模型 -->
         <a-assets>
+            <a-asset-item id="one" src="./source/one.glb"></a-asset-item>
+            <a-asset-item id="two" src="./source/two.glb"></a-asset-item>
+            <a-asset-item id="three" src="./source/three.glb"></a-asset-item>
             <a-asset-item id="four" src="./source/four.glb"></a-asset-item>
             <a-asset-item id="five" src="./source/five.glb"></a-asset-item>
             <a-asset-item id="six" src="./source/six.glb"></a-asset-item>
@@ -508,9 +480,9 @@ AFRAME.registerComponent("next", {
         <!-- 順移 -->
         <!-- <a-sphere position="-8.761 5.578 -3.118" class="raycastable" teleport></a-sphere> -->
         <!-- 使用模型或圖片 -->
-        <a-entity id="four" gltf-model="#four" position="7.723 5.505 -7.752" rotation="0 -49.649 0"scale="2 2 2" class="raycastable" teleport4></a-entity>
-        <a-entity id="five" gltf-model="#five" position="-3.179 2.350 -5.583" scale="2 2 2" class="raycastable" teleport5></a-entity>
-        <a-entity id="six" gltf-model="#six" position="-3.113 2.350 9.043" rotation = "0 158.571 0"scale="2 2 2" class="raycastable" teleport6></a-entity>
+       <!--  <a-entity id="four" gltf-model="#four" position="7.723 5.505 -7.752" rotation="0 -49.649 0"scale="2 2 2" class="raycastable" teleport4></a-entity>-->
+        <a-entity id="five" gltf-model="#three" position="-3.179 2.350 -5.583" scale="2 2 2" class="raycastable" teleport5></a-entity>
+        <a-entity id="six" gltf-model="#four" position="-3.113 2.350 9.043" rotation = "0 158.571 0"scale="2 2 2" class="raycastable" teleport6></a-entity>
         <a-entity id="previous" gltf-model="#previous" position="9.134 4.566 -0.438" rotation = "-3.849 -76.945 178.972"scale="4 4 4" class="raycastable" previous></a-entity>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
@@ -521,28 +493,26 @@ AFRAME.registerComponent("next", {
             visible="false" passwordnote></a-box> -->
         <script src="aframe.js"></script>
       `;
-      document.querySelector('a-scene').enterVR()
-    }
-  );
+      document.querySelector("a-scene").enterVR();
+    });
   },
 });
-
 
 //previous
 AFRAME.registerComponent("previous", {
   init: function () {
     var previous = this.el;
     previous.addEventListener("mouseenter", function () {
-      previous.object3D.scale.set(6 ,6 ,6);
-      console.log("lol")
+      previous.object3D.scale.set(6, 6, 6);
+      console.log("lol");
     });
 
     previous.addEventListener("mouseleave", function () {
-      previous.object3D.scale.set(4 ,4 ,4);
+      previous.object3D.scale.set(4, 4, 4);
     });
     previous.addEventListener("click", function () {
       // document.querySelector('a-scene').innerHTML
-      document.querySelector('a-scene').innerHTML=`
+      document.querySelector("a-scene").innerHTML = `
         <a-sky src="./source/entrance-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
@@ -583,28 +553,26 @@ AFRAME.registerComponent("previous", {
             visible="false" passwordnote></a-box> -->
         <script src="aframe.js"></script>
       `;
-      document.querySelector('a-scene').enterVR()
-    }
-  );
+      document.querySelector("a-scene").enterVR();
+    });
   },
 });
-
 
 //four
 AFRAME.registerComponent("teleport4", {
   init: function () {
     var one = this.el;
     one.addEventListener("mouseenter", function () {
-      one.object3D.scale.set(4 ,4 ,4);
-      console.log("lol")
+      one.object3D.scale.set(4, 4, 4);
+      console.log("lol");
     });
 
     one.addEventListener("mouseleave", function () {
-      one.object3D.scale.set(2 ,2 ,2);
+      one.object3D.scale.set(2, 2, 2);
     });
     one.addEventListener("click", function () {
       // document.querySelector('a-scene').innerHTML
-      document.querySelector('a-scene').innerHTML=`
+      document.querySelector("a-scene").innerHTML = `
         <a-sky src="./source/whiteboard-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
@@ -654,9 +622,8 @@ AFRAME.registerComponent("teleport4", {
 
         <script src="aframe.js"></script>
       `;
-      document.querySelector('a-scene').enterVR()
-    }
-  );
+      document.querySelector("a-scene").enterVR();
+    });
   },
 });
 
@@ -666,14 +633,14 @@ AFRAME.registerComponent("whiteboard", {
     var panel = document.querySelector("#whiteboardpanel");
     var wbsound = document.querySelector("#wbsound");
     whiteboard.addEventListener("mouseenter", function () {
-      whiteboard.object3D.scale.set(15, 20 ,15);
+      whiteboard.object3D.scale.set(15, 20, 15);
     });
 
     whiteboard.addEventListener("mouseleave", function () {
-      whiteboard.object3D.scale.set(15, 20 ,15);
+      whiteboard.object3D.scale.set(15, 20, 15);
     });
     whiteboard.addEventListener("click", function () {
-      console.log("hahaha")
+      console.log("hahaha");
       var isVisible = panel.getAttribute("visible") === true;
       if (isVisible) {
         panel.setAttribute("visible", false);
@@ -688,24 +655,23 @@ AFRAME.registerComponent("whiteboard", {
   },
 });
 
-
 //SIX
 AFRAME.registerComponent("teleport6", {
   init: function () {
     var one = this.el;
     one.addEventListener("mouseenter", function () {
-      one.object3D.scale.set(4 ,4 ,4);
-      console.log("lol")
+      one.object3D.scale.set(4, 4, 4);
+      console.log("lol");
     });
 
     one.addEventListener("mouseleave", function () {
-      one.object3D.scale.set(2 ,2 ,2);
+      one.object3D.scale.set(2, 2, 2);
     });
     one.addEventListener("click", function () {
-      console.log("aaaa")
+      console.log("aaaa");
       // document.querySelector('a-scene').innerHTML
-      document.querySelector('a-scene').innerHTML=`
-        <a-sky src="./source/phishing_and_unkown_phonecall-1.jpg" rotation="0 -90 0"></a-sky>
+      document.querySelector("a-scene").innerHTML = `
+       <a-sky src="./source/phishing_and_unkown_phonecall-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
 
@@ -727,49 +693,38 @@ AFRAME.registerComponent("teleport6", {
             <img id="close" src="source/testimg/close.png">
             <audio id="phishingsound" src="./source/mp3/phishingemail_Zh.mp3" preload="auto"></audio>
             <audio id="unkowncallsound" src="./source/mp3/unkowncall_zh.mp3" preload="auto"></audio>
+            <a-asset-item id="unknowncallpanel" src="./source/unkownphonecallpanel3d.glb"></a-asset-item>
+            <a-asset-item id="emailpanel" src="./source/phishingpanel3d.glb"></a-asset-item>
+
         </a-assets>
         <!-- 燈光 -->
         <a-light type="ambient" color="#828278"></a-light>
         <a-light type="point" intensity="1" color="#ebebeb" position="2 4 2"></a-light>
 
         <!-- 互動面板 -->
-        <a-entity id="phishingpanel" position="-0.469 2.862 -2.427" scale="2.279 2.279 2.279"rotation="0 0.221 0"
-            geometry="primitive: plane; width: 2; height: 1" material="color:black"
-            text="color: blue; align: center; value:; width: 2;" visible="false">
-            <a-text value="Phishing" position="0.036 0.383 0.030" scale="0.532 0.532 0.532"
-                text="align: center;"></a-text>
-            <a-text value="Dont click suspicious email" position="0.017 0.181 0.000" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
+        <a-entity id="phishingpanel" gltf-model="#emailpanel" position="-0.162 2.693 -3.399" rotation="0 0 0 "
+            scale="3.399 3.399 3.399" visible="false">
             <a-entity id="phishsound" sound="src: #phishingsound"></a-entity>
         </a-entity>
 
-        <a-entity id="phonecallpanel" position="-0.469 2.862 -2.427" scale="2.279 2.279 2.279" rotation="0 0.221 0"
-            geometry="primitive: plane; width: 2; height: 1" material="color:black"
-            text="color: blue; align: center; value:; width: 2;" visible="false">
-            <a-text value="Scam Call" position="0.036 0.383 0.030" scale="0.532 0.532 0.532"
-                text="align: center;"></a-text>
-            <a-text value="Be cautios with unkown numbers" position="0.017 0.181 0.000" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Check where the number is from" position="0.019 0.017 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
+        <a-entity id="ukpanel" gltf-model="#unknowncallpanel" position="-0.162 2.693 -3.399" rotation="0 0 0"
+            scale="3.399 3.399 3.399" visible="false">
             <a-entity id="ucsound" sound="src: #unkowncallsound"></a-entity>
         </a-entity>
-
         <!-- 互動物件 -->
-        <a-box position="0.112 -2.840 -22.473" scale="21.426 11.687 19.468" class="raycastable" color="blue" visible="false"
-        phishing></a-box>
+        <a-box position="0.112 -2.840 -22.473" scale="21.426 11.687 19.468" class="raycastable" color="blue"
+            visible="false" phishing></a-box>
 
-        <a-box position="44.184 -74.192 -18.224"  rotation="8.977 -22.296 -3.252" scale="13.616 9 32.841" class="raycastable" color="blue" visible="false"
-        phonecall></a-box>
+        <a-box position="44.184 -74.192 -18.224" rotation="8.977 -22.296 -3.252" scale="13.616 9 32.841"
+            class="raycastable" color="blue" visible="false" phonecall></a-box>
 
         <a-entity id="backward2" gltf-model="#backward" position="4.544 3.484 -5.583" scale="3.692 3.692 3.692"
             class="raycastable" backward2></a-entity>
 
         <script src="six.js"></script>
       `;
-      document.querySelector('a-scene').enterVR()
-    }
-  );
+      document.querySelector("a-scene").enterVR();
+    });
   },
 });
 
@@ -779,14 +734,14 @@ AFRAME.registerComponent("phishing", {
     var panel = document.querySelector("#phishingpanel");
     var phishsound = document.querySelector("#phishsound");
     phishing.addEventListener("mouseenter", function () {
-      confidentailfile.object3D.scale.set(21.426 ,11.687, 19.468);
+      confidentailfile.object3D.scale.set(21.426, 11.687, 19.468);
     });
 
     phishing.addEventListener("mouseleave", function () {
       phishing.object3D.scale.set(21.426, 11.687, 19.468);
     });
     phishing.addEventListener("click", function () {
-      console.log("hahaha")
+      console.log("hahaha");
       var isVisible = panel.getAttribute("visible") === true;
       if (isVisible) {
         panel.setAttribute("visible", false);
@@ -804,17 +759,17 @@ AFRAME.registerComponent("phishing", {
 AFRAME.registerComponent("phonecall", {
   init: function () {
     var phonecall = this.el;
-    var panel = document.querySelector("#phonecallpanel");
+    var panel = document.querySelector("#ukpanel");
     var ucsound = document.querySelector("#ucsound");
     phonecall.addEventListener("mouseenter", function () {
-      phonecall.object3D.scale.set(13.616 ,9 ,32.8419);
+      phonecall.object3D.scale.set(13.616, 9, 32.8419);
     });
 
     phonecall.addEventListener("mouseleave", function () {
-      phonecall.object3D.scale.set(13.616 ,9 ,32.841);
+      phonecall.object3D.scale.set(13.616, 9, 32.841);
     });
     phonecall.addEventListener("click", function () {
-      console.log("hahaha")
+      console.log("hahaha");
       var isVisible = panel.getAttribute("visible") === true;
       if (isVisible) {
         panel.setAttribute("visible", false);
@@ -834,16 +789,16 @@ AFRAME.registerComponent("teleport5", {
   init: function () {
     var one = this.el;
     one.addEventListener("mouseenter", function () {
-      one.object3D.scale.set(4 ,4 ,4);
-      console.log("lol")
+      one.object3D.scale.set(4, 4, 4);
+      console.log("lol");
     });
 
     one.addEventListener("mouseleave", function () {
-      one.object3D.scale.set(2 ,2 ,2);
+      one.object3D.scale.set(2, 2, 2);
     });
     one.addEventListener("click", function () {
       // document.querySelector('a-scene').innerHTML
-      document.querySelector('a-scene').innerHTML=`
+      document.querySelector("a-scene").innerHTML = `
         <a-sky src="./source/confidenttial_and_usb.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
@@ -859,6 +814,8 @@ AFRAME.registerComponent("teleport5", {
         <!-- 模型 -->
         <a-assets>
             <a-asset-item id="backward" src="./source/backward.glb"></a-asset-item>
+            <a-asset-item id="confidentialpanel" src="./source/confidentialpanel3D.glb"></a-asset-item>
+            <a-asset-item id="unknownusbpanel" src="./source/usbpanel3d.glb"></a-asset-item>
         </a-assets>
         <!-- 圖片或影片 -->
         <a-assets>
@@ -872,62 +829,47 @@ AFRAME.registerComponent("teleport5", {
         <a-light type="point" intensity="1" color="#ebebeb" position="2 4 2"></a-light>
 
         <!-- 互動面板 -->
-        <a-entity id="confidentailfilepanel" position="0.076 1.723 -1.177" rotation="0 -0.284 0"
-            geometry="primitive: plane; width: 2; height: 1" material="color:black"
-            text="color: blue; align: center; value:; width: 2;" visible="false">
-            <a-text value="Documents with confidential information" position="-0.800 0.383 0.027"
-                scale="0.412 0.412 0.412"></a-text>
-            <a-text value="Dont leave laying around" position="-0.473 0.181 0.000" scale="0.409 0.409 0.409"></a-text>
-            <a-text value="Keep in a locked drawer" position="-0.451 0 0.015" scale="0.409 0.409 0.409"></a-text>
+
+        <a-entity id="filepanel" gltf-model="#confidentialpanel" position="0.076 1.723 -0.098" rotation="0 -0.284 0"
+            visible="false">
             <a-entity id="cfsound" sound="src: #confidentailfilesound"></a-entity>
         </a-entity>
 
-        <a-entity id="unattendedusbpanel" position="0.076 1.723 -1.177" rotation="0 -0.284 0"
-            geometry="primitive: plane; width: 2; height: 1" material="color:black"
-            text="color: blue; align: center; value:; width: 2;" visible="false">
-            <a-text value="Unattended USB drive" position="0.036 0.383 0.030" scale="0.532 0.532 0.532"
-                text="align: center;"></a-text>
-            <a-text value="Dont use" position="0.017 0.181 0.000" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Inform superior" position="0.019 0.017 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-text value="Can contain malware" position="0.019 -0.167 0.015" scale="0.334 0.334 0.334"
-                text="align: center;"></a-text>
-            <a-entity id="usbsound" sound="src: #unattendedusbsound"></a-entity>
+        <a-entity id="usbpanel" gltf-model="#unknownusbpanel" position="0.076 1.723 -0.098" rotation="0 -0.284 0"
+            material="emissiveIntensity:10" visible="false">
+            <a-entity id="idsound" sound="src: #idcardsound"></a-entity>
         </a-entity>
-
         <!-- 互動物件 -->
         <a-box position="1.906 -4.726 -10.186" scale="5 5 10" class="raycastable" color="blue" visible="false"
-        confidentailfile></a-box>
+            confidentailfile></a-box>
 
         <a-box position="-26.576 -73.465 -52.674" scale="9 9 9" class="raycastable" color="blue" visible="false"
-        unattendedusb></a-box>
+            unattendedusb></a-box>
 
         <a-entity id="backward2" gltf-model="#backward" position="4.544 3.484 -5.583" scale="3.692 3.692 3.692"
             class="raycastable" backward2></a-entity>
 
-        <script src="aframe.js"></script>
+        <script src="five.js"></script>
       `;
-      document.querySelector('a-scene').enterVR()
-    }
-  );
+      document.querySelector("a-scene").enterVR();
+    });
   },
 });
 
 AFRAME.registerComponent("confidentailfile", {
   init: function () {
     var confidentailfile = this.el;
-    var panel = document.querySelector("#confidentailfilepanel");
+    var panel = document.querySelector("#filepanel");
     var cfsound = document.querySelector("#cfsound");
     confidentailfile.addEventListener("mouseenter", function () {
-      confidentailfile.object3D.scale.set(5, 5 ,10);
+      confidentailfile.object3D.scale.set(5, 5, 10);
     });
 
     confidentailfile.addEventListener("mouseleave", function () {
       confidentailfile.object3D.scale.set(5, 5, 10);
     });
     confidentailfile.addEventListener("click", function () {
-      console.log("hahaha")
+      console.log("hahaha");
       var isVisible = panel.getAttribute("visible") === true;
       if (isVisible) {
         panel.setAttribute("visible", false);
@@ -945,17 +887,17 @@ AFRAME.registerComponent("confidentailfile", {
 AFRAME.registerComponent("unattendedusb", {
   init: function () {
     var unattendedusb = this.el;
-    var panel = document.querySelector("#unattendedusbpanel");
+    var panel = document.querySelector("#usbpanel");
     var usbsound = document.querySelector("#usbsound");
     unattendedusb.addEventListener("mouseenter", function () {
-      unattendedusb.object3D.scale.set(9 ,9, 9);
+      unattendedusb.object3D.scale.set(9, 9, 9);
     });
 
     unattendedusb.addEventListener("mouseleave", function () {
-      unattendedusb.object3D.scale.set(9 ,9, 9);
+      unattendedusb.object3D.scale.set(9, 9, 9);
     });
     unattendedusb.addEventListener("click", function () {
-      console.log("hahaha")
+      console.log("hahaha");
       var isVisible = panel.getAttribute("visible") === true;
       if (isVisible) {
         panel.setAttribute("visible", false);
@@ -974,15 +916,15 @@ AFRAME.registerComponent("backward2", {
   init: function () {
     var teleport = this.el;
     teleport.addEventListener("mouseenter", function () {
-      teleport.object3D.scale.set(5 ,5 ,5);
-      console.log("lol")
+      teleport.object3D.scale.set(5, 5, 5);
+      console.log("lol");
     });
 
     teleport.addEventListener("mouseleave", function () {
-      teleport.object3D.scale.set(3.692 ,3.692, 3.692);
+      teleport.object3D.scale.set(3.692, 3.692, 3.692);
     });
     teleport.addEventListener("click", function () {
-      document.querySelector('a-scene').innerHTML=`
+      document.querySelector("a-scene").innerHTML = `
         <a-sky src="./source/to_whiteboard2-1.jpg" rotation="0 -90 0"></a-sky>
 
         <a-entity id="rig" position="0 1.264 2.704" rotation="0 0 0">
@@ -1028,13 +970,11 @@ AFRAME.registerComponent("backward2", {
   },
 });
 
-
-
 // AFRAME.registerComponent("teleport", {
 //   init: function () {
 //     var teleport = this.el;
 //     teleport.addEventListener("click", function () {
-      
+
 //       document.querySelector('a-scene').innerHTML = `
 //         <a-sky src="./source/unlock_session_threat_360-1.jpg" rotation="0 -90 0"></a-sky>
 
